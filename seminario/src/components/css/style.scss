@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-color: #f0f0f0;
+}
+
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // flex-direction: column;
+}
+.img img{
+    
+    border-radius: 50%;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.27);
+}
+
+.form {
+    --background: #ffff;
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    padding: 20px;
+
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    width: 350;
+    height: 400px;
+  }
+  
+  span {
+    font-family: var(--font-SpaceMono);
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 25px;
+    align-items: center;
+  }
+  
+  .separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  
+  .separator > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 4px 4px var(--main-color);
+    border: solid 2px black;
+    background-color: #41A8F4;
+  }
+  
+  .separator > span {
+    color: var(--font-color);
+    font-family: var(--font-SpaceMono);
+    font-weight: 600;
+  }
+  .form-block{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+  .oauthButton {
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    // gap: 70px;
+      /* margin: 50px auto 0 auto; */
+    padding: auto 15px 15px auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: all 250ms;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .oauthButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #E77318;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+  }
+  
+  .oauthButton:hover {
+    color: #e8e8e8;
+  }
+  
+  .oauthButton:hover::before {
+    width: 100%;
+  }
+  
+  .form > input {
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
