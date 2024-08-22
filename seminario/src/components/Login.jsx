@@ -14,7 +14,6 @@ render() {
         <div className="img">
             <img src={ImgSI} alt="" width={450} />
             <img src={logoA} alt="" width={625} />
-            {/* <img src="https://i.pinimg.com/736x/b1/5a/34/b15a34ae7890d75945ba1df15ca9da5f.jpg" alt="" /> */}
         </div>
         <div className="for">
             <form action="" className="form">
