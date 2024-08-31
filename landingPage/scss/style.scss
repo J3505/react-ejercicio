@@ -1,1 +1,10 @@
-@import 'page','footer','header','content';
+@import './components/page';
+@import './components/header';
+@import './components/footer';
+@import './components/content';
+
+.container{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+}
