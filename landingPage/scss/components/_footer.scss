@@ -1,5 +1,36 @@
 .footer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
     width: 100%;
-    height: 20vh;
-    background-color: rgb(161, 184, 33);
+    height: 28rem;
+    background-color: #e65454;
+    padding: 1rem;
+
+
+    .footer1{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+       
+    }
+    .footer2{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        
+    }
+    .footer3{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        
+    }
+    .footer4{
+        width: 100%;
+        height: 108%;
+        background-color: #fff;
+        font-size: xx-large;
+        
+    }
 }
