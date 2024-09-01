@@ -1,5 +1,57 @@
 .content{
+    display: grid;
+    gap: 1rem;
     width: 100%;
-    height: 70vh;
-    background-color: rgb(112, 224, 228);
+    height: auto;
+    background-color: #f8f8f8;
+
+    div{
+        padding: 1rem;
+        background-color: #8078f3;
+        border-radius: 2rem;
+    }
+
+    .page1{
+        width: 100%;
+        height: 34rem;
+        background-color: blue;
+        border-radius: 2rem;
+    }
+    .page2{
+        width: 100%;
+        height: 34rem;
+        background-color: green;
+        border-radius: 2rem;
+
+    }
+    .page3{
+        width: 100%;
+        height: 34rem;
+        background-color: brown;
+        border-radius: 2rem;
+
+    }
+    .page4{
+        width: 100%;
+        height: 34rem;
+        background-color: pink;
+        border-radius: 2rem;
+
+    }
+    .page5{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        height: 34rem;
+        background-color: salmon;
+        border-radius: 2rem;
+
+        .item2{
+            grid-column-start: 2;
+            grid-column-end:4;
+
+        }
+    }
 }
