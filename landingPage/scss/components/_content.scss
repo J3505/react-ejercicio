@@ -7,7 +7,7 @@
 
     div{
         padding: 1rem;
-        background-color: #8078f3;
+        // background-color: #8078f3;
         border-radius: 2rem;
     }
 
@@ -16,14 +16,144 @@
         height:50rem;
         // background-color: blue;
         border-radius: 2rem;
-        background-image: url(../../img/img01.jpg);
+        background-image: linear-gradient(180deg, #fdfdfd13 0%, #ffffff0c 100%), url(../../img/img01.jpg);
+        background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
+        // background-repeat: no-repeat;
+    
+        .capa-1{
+            position: relative;
+            .btn{
+                // background-color: #f8f8f8;
+                padding: 4px 5px;
+                border: 1px solid rgba(99, 96, 96, 0.712);
+                position: absolute;
+                color: #f8f8f8;
+                
+            }
+            .texto{
+                position: absolute;
+                font-size: 10rem;
+                font-weight: 100;
+                color: #f8f8f8;
+                left: 15rem;
+
+            }
+        }
+        .capa-2{ 
+            // background-color: #f8f8f8;
+            position: absolute;
+            top:30rem;
+            left: 15rem;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            .btns1{
+                background-color: #f8f8f8;
+                padding: 10px 14px;
+            }
+            .btns2{
+                background-color: #f8f8f8;
+                width: rem;
+                height: 1em;
+                padding: 0 12px;
+                position: absolute;
+                left: 7rem;
+                
+            }
+            .btns3{
+                transform: rotate(45deg);
+                background-color: #f8f8f8;
+                padding: 4px;
+                border-radius: 50%;
+                display: flex;
+                right: 9px;
+
+                .icon{
+                    background-color: #26283d;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+        .capa-3{
+
+            position: absolute;
+            top: 40rem;
+
+            .btn{
+                background-color: rgba(255, 255, 255, 0.329);
+                padding: 10px 14px;
+                position: absolute;
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid rgba(99, 96, 96, 0.712);
+                border-radius: 50%;
+                z-index: 1;
+                color: #f8f8f8;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                
+            }
+            .flecha{
+                background-color: rgba(255, 255, 255, 0.329);
+                padding: 10px 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 5rem;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                span{
+                    font-size: 10px;
+                    font-weight: 100;
+                }
+            }
+            img{
+                width: 2rem;
+            }
+        }
+        
     }
     .page2{
         width: 100%;
-        height: 34rem;
+        height: 10rem;
+        background-color: green;
+        border-radius: 2rem;
+        position: relative;
+        
+        .card-absoluto{
+            background-color: #f8f8f8;
+            height: 300px;
+            width: 300px;
+            clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+            border-radius: 20px;
+            position: absolute;
+            left: 70rem;
+            top: -200px;
+            // margin: 50rem;
+    
+            .circle{
+                background-color: #f8f8f8;
+                height: 300px;
+                width: 300px;
+                clip-path: circle(50% at 50% 50%);
+                border-radius: 20px;
+                position: absolute;
+            }
+        }
+    }
+    .page21{
+        width: 100%;
+        height: 10rem;
         background-color: green;
         border-radius: 2rem;
 

@@ -292,21 +292,135 @@
 }
 .content div {
   padding: 1rem;
-  background-color: #8078f3;
   border-radius: 2rem;
 }
 .content .page1 {
   width: 100%;
   height: 50rem;
   border-radius: 2rem;
-  background-image: url(../../img/img01.jpg);
+  background-image: linear-gradient(180deg, rgba(253, 253, 253, 0.0745098039) 0%, rgba(255, 255, 255, 0.0470588235) 100%), url(../../img/img01.jpg);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+.content .page1 .capa-1 {
   position: relative;
+}
+.content .page1 .capa-1 .btn {
+  padding: 4px 5px;
+  border: 1px solid rgba(99, 96, 96, 0.712);
+  position: absolute;
+  color: #f8f8f8;
+}
+.content .page1 .capa-1 .texto {
+  position: absolute;
+  font-size: 10rem;
+  font-weight: 100;
+  color: #f8f8f8;
+  left: 15rem;
+}
+.content .page1 .capa-2 {
+  position: absolute;
+  top: 30rem;
+  left: 15rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.content .page1 .capa-2 .btns1 {
+  background-color: #f8f8f8;
+  padding: 10px 14px;
+}
+.content .page1 .capa-2 .btns2 {
+  background-color: #f8f8f8;
+  width: rem;
+  height: 1em;
+  padding: 0 12px;
+  position: absolute;
+  left: 7rem;
+}
+.content .page1 .capa-2 .btns3 {
+  transform: rotate(45deg);
+  background-color: #f8f8f8;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  right: 9px;
+}
+.content .page1 .capa-2 .btns3 .icon {
+  background-color: #26283d;
+  padding: 10px;
+  border-radius: 50%;
+}
+.content .page1 .capa-3 {
+  position: absolute;
+  top: 40rem;
+}
+.content .page1 .capa-3 .btn {
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 10px 14px;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  color: #f8f8f8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.content .page1 .capa-3 .flecha {
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.content .page1 .capa-3 .flecha span {
+  font-size: 10px;
+  font-weight: 100;
+}
+.content .page1 .capa-3 img {
+  width: 2rem;
 }
 .content .page2 {
   width: 100%;
-  height: 34rem;
+  height: 10rem;
+  background-color: green;
+  border-radius: 2rem;
+  position: relative;
+}
+.content .page2 .card-absoluto {
+  background-color: #f8f8f8;
+  height: 300px;
+  width: 300px;
+  -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+          clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+  border-radius: 20px;
+  position: absolute;
+  left: 70rem;
+  top: -200px;
+}
+.content .page2 .card-absoluto .circle {
+  background-color: #f8f8f8;
+  height: 300px;
+  width: 300px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  border-radius: 20px;
+  position: absolute;
+}
+.content .page21 {
+  width: 100%;
+  height: 10rem;
   background-color: green;
   border-radius: 2rem;
 }
