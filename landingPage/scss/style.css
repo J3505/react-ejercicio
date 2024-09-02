@@ -134,12 +134,12 @@
   .header .navbar-texto {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     font-size: small;
     font-weight: 200;
   }
   .header .navbar-texto h3 {
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: 800;
     color: #0c0c0c;
   }
@@ -313,10 +313,15 @@
 }
 .content .page1 .capa-1 .texto {
   position: absolute;
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: 100;
   color: #f8f8f8;
   left: 15rem;
+  margin: 0 8rem;
+  padding: 4rem;
+}
+.content .page1 .capa-1 .texto p {
+  overflow: hidden;
 }
 .content .page1 .capa-2 {
   position: absolute;
@@ -391,32 +396,54 @@
 .content .page1 .capa-3 img {
   width: 2rem;
 }
+.content .page1 .card-absoluto {
+  background-color: #f8f8f8;
+  height: 300px;
+  width: 300px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+          clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+  position: absolute;
+  left: 63rem;
+  top: 40.9rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.content .page1 .card-absoluto .circulo {
+  display: flex;
+  justify-content: end;
+}
+.content .page1 .card-absoluto .circulo .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.content .page1 .card-absoluto .circulo .icono img {
+  width: 1rem;
+}
+.content .page1 .card-absoluto .parrafo {
+  font-weight: 5000;
+  font-size: large;
+  padding: 2rem;
+}
+.content .page1 .card-absoluto .linea {
+  border: 1px solid rgba(187, 184, 184, 0.8235294118);
+  padding: 0;
+}
+.content .page1 .card-absoluto .palabras-tres {
+  display: flex;
+  padding: 0;
+}
 .content .page2 {
   width: 100%;
   height: 10rem;
-  background-color: green;
+  background-color: rgb(255, 255, 255);
   border-radius: 2rem;
-  position: relative;
-}
-.content .page2 .card-absoluto {
-  background-color: #f8f8f8;
-  height: 300px;
-  width: 300px;
-  -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
-          clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
-  border-radius: 20px;
-  position: absolute;
-  left: 70rem;
-  top: -200px;
-}
-.content .page2 .card-absoluto .circle {
-  background-color: #f8f8f8;
-  height: 300px;
-  width: 300px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  border-radius: 20px;
-  position: absolute;
+  border: 1px solid black;
 }
 .content .page21 {
   width: 100%;
